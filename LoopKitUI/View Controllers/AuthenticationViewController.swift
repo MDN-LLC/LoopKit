@@ -142,7 +142,7 @@ public final class AuthenticationViewController<T: ServiceAuthenticationUI>: UIT
             cell.textField.isSecureTextEntry = credential.field.isSecret
             cell.textField.returnKeyType = (indexPath.row < credentials.count - 1) ? .next : .done
             cell.textField.text = credential.value
-            cell.textField.placeholder = credential.field.placeholder ?? LocalizedString("Required", comment: "The default placeholder string for a credential")
+            cell.textField.placeholder = "Just a test placeholder"
 
             if let options = credential.field.options {
                 let picker = CredentialOptionPicker(options: options)
